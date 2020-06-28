@@ -1,0 +1,2 @@
+rootProject.name='RevolutTest'
+include ':app'
