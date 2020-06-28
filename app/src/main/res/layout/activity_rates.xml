@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.koflox.revoluttest.ui.rates.RatesViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.koflox.revoluttest.ui.views.KeyboardRecyclerView
+            android:id="@+id/tvRates"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:padding="@dimen/indent_medium"
+            app:data="@{viewModel.rates}" />
+
+        <ProgressBar
+            android:id="@+id/pbGettingRates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="@{viewModel.isGettingRates ? View.VISIBLE : View.GONE}" />
+
+    </FrameLayout>
+
+</layout>

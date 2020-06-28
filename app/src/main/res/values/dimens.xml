@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="indent_atom">2dp</dimen>
+    <dimen name="indent_atom_plus">4dp</dimen>
+    <dimen name="indent_small">8dp</dimen>
+    <dimen name="indent_medium">16dp</dimen>
+    <dimen name="indent_medium_plus">32dp</dimen>
+
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_small_plus">14sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+
+    <dimen name="edge_country_icon">50dp</dimen>
+    <dimen name="min_width_currency_input">20dp</dimen>
+</resources>
